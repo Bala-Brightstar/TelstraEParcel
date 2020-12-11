@@ -1,0 +1,20 @@
+<ng-container *ngIf="fc.invalid && (fc.dirty || fc.touched)">
+    <div *ngIf="fc.errors.required" class="p-invalid">
+        {{requiredValMsg}}
+    </div>
+    <div *ngIf="maxValMsg && fc.errors.maxlength" class="p-invalid">
+        {{maxValMsg}}
+    </div>
+    <div *ngIf="maxValMsg && fc.errors.email" class="p-invalid">
+        Valid email is required!
+    </div>
+    <div *ngIf="fc.hasError('whitespace') && !fc.errors.required" class="p-invalid">
+        Please enter valid data!
+    </div>
+    <div *ngIf="fc.hasError('duplicate') && !fc.errors.required" class="p-invalid">
+        That name is taken. Try another.
+    </div>
+    <div *ngIf="fc.hasError('pattern') && !fc.errors.required" class="p-invalid">
+        Invalid input!
+    </div>
+</ng-container>

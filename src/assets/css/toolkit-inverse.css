@@ -7286,8 +7286,8 @@ textarea {
 
 @font-face {
   font-family: "toolkit-entypo";
-  src: url("../assets/fonts/toolkit-entypo.eot");
-  src: url("../assets/fonts/toolkit-entypo.eot?#iefix") format("eot"), url("../assets/fonts/toolkit-entypo.woff2") format("woff2"), url("../assets/fonts/toolkit-entypo.woff") format("woff"), url("../assets/fonts/toolkit-entypo.ttf") format("truetype");
+  src: url("../fonts/toolkit-entypo.eot");
+  src: url("../fonts/toolkit-entypo.eot?#iefix") format("eot"), url("../fonts/toolkit-entypo.woff2") format("woff2"), url("../fonts/toolkit-entypo.woff") format("woff"), url("../fonts/toolkit-entypo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -9163,7 +9163,7 @@ canvas {
 
 @media (min-width: 992px) {
   .sidebar-nav {
-    margin-right: 30px; } }
+    margin-right: 40px; } }
 
 .iconav {
   margin-top: -20px;
@@ -9424,61 +9424,3 @@ canvas {
   color: #fff;
   background-color: #4d5364;
   border-color: transparent; }
-
-  .sidebar{
-    max-width: 20% !important;
-  }
-
-  #exampleCheck1{
-      margin-left: 0;
-  }
-
-  .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgb(255, 255, 255);
-	color:rgba(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-    box-shadow: 2px 2px 3px #999;    
-}
-
-button:focus .float{outline:0;}
-
-.my-float{
-    margin-top:10px;
-}
-
-thead{
-    background-color: #1ca8dd;
-    color: #000;
-}
-
-.fa-plus{
-    color: #000;
-}
-
-th input, tr input{
-padding: 0px !important;
-display: inline-flex;
-}
-
-button{
-    color: #404040 !important;
-    font-weight: 700 !important;
-    letter-spacing: 3px;
-    background: none;
-    box-shadow: 0px 5px 40px -10px rgba(214, 214, 214, 0.57);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(252, 252, 252, 0.57);
-    border: none;
-    background: #e6e6e6;
-    color: #080808 !important;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-left: 40px;
-    padding: 20px;
-    }

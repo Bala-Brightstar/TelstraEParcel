@@ -7286,8 +7286,8 @@ textarea {
 
 @font-face {
   font-family: "toolkit-entypo";
-  src: url("../assets/fonts/toolkit-entypo.eot");
-  src: url("../assets/fonts/toolkit-entypo.eot?#iefix") format("eot"), url("../assets/fonts/toolkit-entypo.woff2") format("woff2"), url("../assets/fonts/toolkit-entypo.woff") format("woff"), url("../assets/fonts/toolkit-entypo.ttf") format("truetype");
+  //src: url("../assets/fonts/toolkit-entypo.eot");
+  //src: url("../assets/fonts/toolkit-entypo.eot?#iefix") format("eot"), url("../assets/fonts/toolkit-entypo.woff2") format("woff2"), url("../assets/fonts/toolkit-entypo.woff") format("woff"), url("../assets/fonts/toolkit-entypo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -9433,23 +9433,12 @@ canvas {
       margin-left: 0;
   }
 
-  .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgb(255, 255, 255);
-	color:rgba(0, 0, 0);
-	border-radius:50px;
-	text-align:center;
-    box-shadow: 2px 2px 3px #999;    
-}
 
 button:focus .float{outline:0;}
 
 .my-float{
-    margin-top:10px;
+    margin-top:5px;
+    margin-left: 3px;
 }
 
 thead{
@@ -9457,7 +9446,7 @@ thead{
     color: #000;
 }
 
-.fa-plus{
+.fa-plus, .fa-filter{
     color: #000;
 }
 
@@ -9475,10 +9464,170 @@ button{
     -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(252, 252, 252, 0.57);
     border: none;
-    background: #e6e6e6;
+    background: #039bf3;
     color: #080808 !important;
     font-weight: 100;
     margin-top: 20px;
     margin-left: 40px;
     padding: 20px;
     }
+
+    label{
+        padding-right: 20px;
+    }
+    
+    .form-group{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .form-group label{
+        width: 250px;
+        text-align: end;
+        align-items: flex-start;
+    }
+
+    input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #039bf3;
+    background-color: #039bf3;
+}
+
+// .main-create{
+//     background-color: #0c0c0c;
+//     border-radius: 10px;
+//     color: #f7f3f3;
+//     height: 86%;
+//     padding: 15px;
+    
+// }
+.main-table-p{
+  width: 100%;
+}
+
+.p-calendar .p-datepicker {
+    min-width: 25rem;
+    width: 380px !important;
+
+    td {
+        font-weight: 400;
+    }
+}
+
+tr>th:hover{
+  background-color: #f8f9fa !important;
+  border-bottom: 4px solid #039bf3;
+}
+
+tr>th:active{
+  background-color: #f8f9fa !important;
+}
+
+tr:hover{
+  background-color: #9ddffa !important;
+}
+
+::ng-deep .p-calendar .p-inputtext{
+  width: 180px !important;
+  height: 10px !important;
+}
+::ng-deep .p-column-filter .p-inputtext:focus{
+background-color: yellow;
+}
+
+::ng-deep .p-calendar .p-datepicker{
+  width: 380px;
+}
+
+::ng-deep .p-calendar-w-btn{
+  height: 30px;
+}
+
+::ng-deep p-table{
+  width:1200px;
+}
+
+::ng-deep .p-datatable .p-datatable-thead > tr > th{
+  font-size: 12px;
+  background-color: #5573aa;
+  color: white;
+}
+
+::ng-deep .p-datatable .p-datatable-tbody > tr > td{
+  font-size: 14px;
+}
+
+::ng-deep .p-datatable .head-column .p-sortable-column.p-highlight{
+  border-bottom: 4px solid #039bf3;
+  background-color: none;
+}
+.filter-section th{
+  height: 50px !important;
+  background-color: rgb(251, 253, 253);
+  border-bottom: 1px solid #fcfcfc !important;
+}
+
+::ng-deep .p-datatable .p-paginator-bottom{
+  height: 30px;
+}
+
+::ng-deep .p-datatable{
+  border-radius: 10px;
+}
+
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page{
+  min-width: 30px;
+  height: 30px;
+}
+
+::ng-deep .p-paginator .p-paginator-current{
+  height: 12px;
+  font-size: 16px;
+}
+
+::ng-deep .pi-sort-alt:before {
+  content: '\e903 \A \e902';
+}
+
+::ng-deep .pi-sort-amount-up-alt:before {
+  content: '\e903';
+}
+
+::ng-deep .pi-sort-amount-down:before {
+  content: '\e902';
+}
+
+::ng-deep .p-paginator .p-dropdown{
+  visibility: hidden;
+}
+
+::ng-deep .p-paginator-bottom span,button{
+  text-align: left ! important;
+  top:-20px;
+  }
+  ::ng-deep .p-paginator-bottom button{
+    text-align: left ! important;
+    top:-20px;
+ }
+
+ .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+  right:40px;
+  top:470px;
+	background-color:rgb(6, 148, 243);
+	color:rgba(0, 0, 0);
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;    
+}
+  
+
+
+
+

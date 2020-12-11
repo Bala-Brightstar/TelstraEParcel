@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-telstraapp-dev-132321-authRole",
+      "UnauthRoleArn": "arn:aws:iam::764216449142:role/amplify-telstraapp-dev-132321-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::764216449142:role/amplify-telstraapp-dev-132321-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-telstraapp-dev-132321-deployment",
+      "UnauthRoleName": "amplify-telstraapp-dev-132321-unauthRole",
+      "StackName": "amplify-telstraapp-dev-132321",
+      "StackId": "arn:aws:cloudformation:us-east-2:764216449142:stack/amplify-telstraapp-dev-132321/a066cd20-39f3-11eb-96e8-0a90e79d42e4",
+      "AmplifyAppId": "d8lz42lwf3pu7"
+    }
+  }
+}

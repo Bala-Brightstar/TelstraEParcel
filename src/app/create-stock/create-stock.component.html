@@ -1,0 +1,66 @@
+<div class="container">
+        <div class="row">
+          <div class="col-md-12 content">
+            <div class="dashhead">
+      <div class="dashhead-titles">
+        <img width="150" style="background-color: aliceblue;" src="https://www.brightstar.com/wp-content/themes/2017/assets/images/Brightstar_logo_RGB.svg" alt="Brightstar" border="0">
+        <h2 style="padding-top: 15px;" class="dashhead-title">Manual Stock Receipt</h2>
+      
+      </div>
+      </div></div></div>
+
+
+    <form [formGroup]="formReceipt" (ngSubmit)="Onsubmit()" class='main-create'>
+        <!-- RLO and Cosignment -->
+        <div class="form-row form-inline">
+          <div class="form-group col-md-6">
+            <label for="RLO" class="table-cell control-label">RLO ID </label>
+            <input [(ngModel)]="RLO" type="text" formControlName="fcRloId" required class="form-control" id="RLO" placeholder="Enter RLO">
+            <app-validate style="margin-left: 300px;color: red;font-size: x-small;" [form_Control]="f.fcRloId" [requiredValMsg]="'RLO ID required!'"
+                [maxValMsg]="maxLengthValidation">
+            </app-validate>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Consignment" class="table-cell control-label">Consignment Number </label>
+            <input [(ngModel)]="Consign" type="text" formControlName="fcConsignmentNo" required class="form-control" id="Consignment" placeholder="Enter Consignment">
+            <app-validate style="margin-left: 285px;color: red;font-size: x-small;text-align: justify;" [form_Control]="f.fcConsignmentNo"
+                [requiredValMsg]="'Consignment No. is required!'" [maxValMsg]="maxLengthValidation">
+            </app-validate>
+          </div>
+        </div>
+
+        <!-- Receiving with damage and status -->
+        <div class="form-row form-inline">
+            <div class="form-group col-md-6">
+              <label for="Damage" class="table-cell control-label">Receiving with Damage </label>
+              <input [(ngModel)]="damage" type="text" formControlName="fcReceivingWithDamage" required class="form-control" id="Damage" placeholder="Enter Damage">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="Status" class="table-cell control-label">Status </label>
+              <input [(ngModel)]="status" type="text" formControlName="fcStatus" required class="form-control" id="Status" placeholder="--Select--">
+                <app-validate style="margin-left: 300px;color: red;font-size: x-small;" [form_Control]="f.fcStatus"  [requiredValMsg]="'Status is required!'">
+                </app-validate>
+            </div>
+        </div>
+
+        <!-- Barcode -->
+        <div class="form-row form-inline">
+            <div class="form-group col-md-6">
+                <label for="Barcode" class="table-cell control-label">Barcode </label>
+                <input [(ngModel)]="barcode" type="text" formControlName="fcBarcode" required class="form-control" id="Barcode" placeholder="Enter Barcode">
+                <app-validate style="margin-left: 300px;color: red;font-size: x-small;text-align: justify;" [form_Control]="f.fcBarcode" [requiredValMsg]="'Barcode is required!'"
+                    [maxValMsg]="maxLengthValidation">
+                </app-validate>
+            </div>
+        </div>
+        <!-- Save and Close Button -->
+        <div class="form-row form-inline">
+            <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-primary" (click)="OnCancel()">Cancel</button>
+            </div>
+        </div>
+      </form>
+</div>
