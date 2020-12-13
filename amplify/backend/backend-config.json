@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "telstraappe6846841": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

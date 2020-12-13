@@ -10,6 +10,11 @@
       "StackName": "amplify-telstraapp-dev-132321",
       "StackId": "arn:aws:cloudformation:us-east-2:764216449142:stack/amplify-telstraapp-dev-132321/a066cd20-39f3-11eb-96e8-0a90e79d42e4",
       "AmplifyAppId": "d8lz42lwf3pu7"
+    },
+    "categories": {
+      "auth": {
+        "telstraappe6846841": {}
+      }
     }
   }
 }
