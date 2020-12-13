@@ -10,7 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SortDirDirective } from './Util/sort-dir.directive';
 import { CreateStockComponent } from './create-stock/create-stock.component';
 import { HomeComponent } from './home/home.component';
 import { InputTextModule } from 'primeng/inputtext';
@@ -38,7 +37,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    SortDirDirective,
     CreateStockComponent,
     HomeComponent,
     ValidateComponent
