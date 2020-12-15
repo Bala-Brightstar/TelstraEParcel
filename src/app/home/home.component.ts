@@ -6,6 +6,7 @@ import { NgbDatepicker, NgbDateStruct, NgbModal } from '@ng-bootstrap/ng-bootstr
 import { Validators, FormControl, FormGroup, FormBuilder, AbstractControl } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import {CalendarModule} from 'primeng/calendar';
+import {ReceiptServiceService} from '../receipt-service.service'
 
 export interface StockReceipt {
   asn: string;
@@ -47,7 +48,9 @@ export class HomeComponent implements OnInit {
 
   @ViewChild('dp') dp: NgbDatepicker;
 
-  constructor(private formBuilder: FormBuilder, private messageService: MessageService) {
+  constructor(  private formBuilder: FormBuilder, 
+                private messageService: MessageService,
+                private _receiptService: ReceiptServiceService) {
   }
 
   receiptList: StockReceipt[] = [    
@@ -85,6 +88,9 @@ ngOnInit() {
   this.showList = true;
   this.initializeReceiptList();
   this.maxLengthValidation = "Should not exceed the maximum allowed length!";
+  this._receiptService.getReceipt().subscribe(res=>{
+    console.log('Bala inka thaan irukken: '+res)
+  })
   }
 
   initializeReceiptList(): void {
