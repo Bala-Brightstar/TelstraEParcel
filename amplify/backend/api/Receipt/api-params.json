@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/receipt",
+            "lambdaFunction": "telstraReceipt",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/receipt"
+        }
+    ],
+    "resourceName": "Receipt",
+    "apiName": "Receipt",
+    "functionArns": [
+        {
+            "lambdaFunction": "telstraReceipt"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-telstraapp-dev-132321-authRole",
+        "unAuthRoleName": "amplify-telstraapp-dev-132321-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "telstraReceipt",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
