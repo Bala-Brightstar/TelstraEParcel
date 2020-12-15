@@ -88,6 +88,7 @@ ngOnInit() {
   this.showList = true;
   this.initializeReceiptList();
   this.maxLengthValidation = "Should not exceed the maximum allowed length!";
+  console.log('Bala home init da ithu');
   this._receiptService.getReceipt().subscribe(res=>{
     console.log('Bala inka thaan irukken: '+res)
   })
